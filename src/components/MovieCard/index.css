@@ -1,0 +1,65 @@
+.poster-size {
+  width: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.poster-size:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #222, #444);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.movie:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 1200px) {
+  .movie {
+    flex-grow: 1;
+    margin: 10px;
+  }
+}
+
+.view-details {
+  position: relative;
+  bottom: 0px;
+  align-self: stretch;
+  background: linear-gradient(145deg, #8b1c15, #ff4040);
+  border: none;
+  height: 30px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.view-details:hover {
+  background-color: yellow;
+  color: black;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 425px) {
+  .view-details {
+    align-self: center;
+    width: 80%;
+    text-align: center;
+  }
+}
